@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Introduction and Project </title>
+    <style>
+        .container{
+            text-align: center;
+            background-color: burlywood;
+            padding: 40px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto; 
+            border-radius: 25px;
+        }
+        .cool{
+            height: 30px;
+            width: 80px;
+            margin-right: 20px;
+        }
+        .cool:hover{
+            transform: translateY(-5px);
+            background-color: rgb(164, 59, 59);
+            color: aliceblue;
+        }
+        .not-cool{
+            height: 30px;
+            width: 100px;
+
+        }
+        .not-cool:hover{
+            transform: translateY(-5px);
+            background-color: rgb(164, 59, 59);
+            color: aliceblue;
+        }
+        .contaner2{
+            display: none;
+        }
+        .next{
+            height: 30px;
+            width: 80px;
+        }
+        .next:hover{
+            transform: translateY(-5px);
+            background-color: rgb(164, 59, 59);
+            color: aliceblue;
+        }
+        .previous{
+            height: 30px;
+            width: 80px;
+        }
+        .previous:hover{
+            transform: translateX(-15px);
+            background-color: rgb(164, 59, 59);
+            color: aliceblue;  
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 50px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Introduction & Cool and not cool</h1>
+
+
+    <div class="container">
+       <div class="conrainer-Main">
+                <p class="notes"> </p>
+
+        <button class="next"> Next </button>
+
+       </div>
+
+
+        <div class="contaner2">
+
+                    <button class="previous"> Go back </button>
+
+                    <p class="fani"> Press the button to choose </p>
+  
+                    <button class="cool"> Your cool </button>
+  
+                    <button class="not-cool"> Yourn't Cool</button>
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+<script>
+    
+const fani= document.querySelector(".fani")
+const coolBtn = document.querySelector(".cool")
+const notcoolBtn = document.querySelector(".not-cool")
+const nextBtn = document.querySelector(".next")
+const note = document.querySelector(".notes")
+const cont = document.querySelector(".contaner2")
+const backBtn = document.querySelector(".previous")       
+const firstName= ` Faniel`
+const lastName= `Habte`
+const yearsOfStudy= `2023`
+const goal= `gradauate by 2024`
+
+    note.innerHTML = `${firstName} ${lastName} ${yearsOfStudy} ${goal} <br><br> Please press button to see the Project (Images)`
+
+coolBtn.addEventListener("click",()=>{
+    fani.innerHTML=`<img src="/cool.jpg" height="200px" alt="">`
+})
+
+notcoolBtn.addEventListener("click", () => {
+    fani.innerHTML = `<img src="/YOU-ARE-NOT-COOL-01.jpg" height="200px" alt="">`
+})
+    
+nextBtn.addEventListener("click", () => {
+    cont.style.display = "block"; 
+    note.style.display ="none";
+    nextBtn.style.display= "none";
+})
+
+backBtn.addEventListener("click", () => {
+    cont.style.display = "none";
+    note.style.display = "block";
+    nextBtn.style.display = "block";
+    nextBtn.style.marginLeft = "110px";
+})
+
+    
+</script>
+</html>
