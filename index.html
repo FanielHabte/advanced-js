@@ -2,10 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2:wght@600&family=Fuggles&family=Inconsolata:wght@600&family=Itim&family=Lato:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@600&family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Introduction and Project </title>
+    <title> Advanced JS Class </title>
     <script src="/script.js"></script>
     <style>
+        html{
+            background-color: rgb(81, 55, 29);
+        }
         .container{
             text-align: center;
             background-color: burlywood;
@@ -58,17 +64,92 @@
         }
         h1{
             text-align: center;
-            padding-bottom: 50px;
+            padding-bottom: 10px;
             font-family: 'Courier New', Courier, monospace;
             font-size: 50px;
+            color: aliceblue;
         }
+        .calc-cotainer{
+            text-align: center;
+            background-color: burlywood;
+            padding: 40px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto; 
+            border-radius: 25px;
+            margin-top: 20px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #degreeC{
+            height: 30px;
+            width: 150px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .output{
+            background-color: white;
+            height: 70px;
+            width: 200px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            color: black;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto; 
+            padding-left: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .calculator{
+            width: 100px;
+            height: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .calculator:hover{
+            
+            background-color: rgb(164, 59, 59);
+            color: aliceblue;
+            font-weight: 600;
+        }
+        .Intor{
+            
+            font-size: larger;
+            height: auto;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+        
+        }
+        .Intor p {
+            max-width: 900px;
+            font-family: 'Space Grotesk', sans-serif;
+            
+        }
+   
+
     </style>
 </head>
 <body>
-    <h1> Introduction & Cool and not cool</h1>
+    
+    <h1> Advanced JS class Projects </h1>
+   <span class="Intor">
+        <p> 
+        Here are some projects that we are working on this class this is exciting journey and i intend to put of the projects that i have worked on and currently working on on this page.
+        </p>
+   </span>
 
 
     <div class="container">
+        <h3> Introduction & Cool and not cool</h3>
        <div class="conrainer-Main">
                 <p class="notes"> </p>
 
@@ -92,8 +173,22 @@
         </div>
 
 
+
+
     </div>
 
+
+        <div class="calc-cotainer">       
+            <h3> °F to °C converter</h3>
+            <input type="text" id="degreeC" placeholder=" °F">
+            <br>
+            <div class="output">
+                
+            </div>
+            <button class="calculator"> Convert</button>
+
+
+        </div>
 </body>
 <script type="module">
 
